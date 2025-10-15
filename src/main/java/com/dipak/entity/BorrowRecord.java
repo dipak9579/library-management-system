@@ -34,7 +34,7 @@ public class BorrowRecord {
     private Date returnDate;
 
     @Temporal(TemporalType.DATE)
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Date actualReturnDate;
 
     @Enumerated(EnumType.STRING)

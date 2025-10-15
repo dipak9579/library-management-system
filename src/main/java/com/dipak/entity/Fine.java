@@ -10,7 +10,7 @@ public class Fine {
     private Long fineId;
 
     private Double amount;
-    private Double paid;
+    private boolean paid;
 
     @OneToOne
     private BorrowRecord borrowRecord;

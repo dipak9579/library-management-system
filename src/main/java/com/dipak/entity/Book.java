@@ -1,5 +1,6 @@
 package com.dipak.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,6 +21,7 @@ public class Book {
 
     @ManyToOne()
     @JoinColumn(name = "category_id")
+    @JsonBackReference
     private Category category;
 
     @Column(unique = true)
